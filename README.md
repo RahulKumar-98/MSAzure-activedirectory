@@ -209,7 +209,8 @@ Now we will paste the following <a href="https://github.com/joshmadakor1/AD_PS/b
 
 <br />
 <p>
-<img width="828" height="679" alt="19" src="https://github.com/user-attachments/assets/f10ac3c0-ce4e-4afc-8d3c-4e66db19da32" />
+<img width="791" height="1088" alt="21" src="https://github.com/user-attachments/assets/137e0d91-e134-4899-b033-5c5f9003aff6" />
+
 
 </p>
 <p>
