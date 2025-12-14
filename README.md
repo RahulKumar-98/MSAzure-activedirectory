@@ -178,16 +178,58 @@ Now we will enable remote desktop access for users wanting to access our domain 
 
 </p>
 <p>
-Next we will log out of client-1 and log back in as our admin account created in DC-1. Then right click the start button -> System -> click Remote Desktop -> click on "Select users that can remotely access this PC" under User Accounts -> click "Add..." -> From here we will type "Domain Users" or "Domain Admins". This will provide the security group selected, access to the client's computer remotely.
+Next we will log out of client-1 and log back in as our admin account created in DC-1. Then right click the start button -> System -> click Remote Desktop -> click on "Select users that can remotely access this PC" under User Accounts -> click "Add..." -> From here we will type "Domain Users" or "Domain Admins". This will provide the security group selected, access to the client's computer remotely. We now allowed all Domain Users to access client-1 remotely.
 </p>
 <br />
 
 </p>
 <br />
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="828" height="679" alt="19" src="https://github.com/user-attachments/assets/f10ac3c0-ce4e-4afc-8d3c-4e66db19da32" />
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Now we will test the above by creating multiple users and attempting to log into client-1's VM with their credentials. First we will jump back to DC-1 and open up "Powershell ISE" as an administrator (in Windows search box, type Powershell ISE -> right click and run as admin).
 </p>
 <br />
+<p>
+<img width="1127" height="917" alt="20" src="https://github.com/user-attachments/assets/5399e82e-f9f8-4ad3-ac81-ecd2054abbb0" />
+
+</p>
+<p>
+Once open, click the top left blank page icon to create a new script. Hit Ctrl + S , to save the file onto the desktop, we will name this file "create-users".
+</p>
+<br />
+<p>
+<img width="828" height="679" alt="19" src="https://github.com/user-attachments/assets/f10ac3c0-ce4e-4afc-8d3c-4e66db19da32" />
+
+</p>
+<p>
+Now we will test the above by creating multiple users and attempting to log into client-1's VM with their credentials. First we will jump back to DC-1 and open up "Powershell ISE" as an administrator (in Windows search box, type Powershell ISE -> right click and run as admin).
+</p>
+<br />
+<p>
+<img width="828" height="679" alt="19" src="https://github.com/user-attachments/assets/f10ac3c0-ce4e-4afc-8d3c-4e66db19da32" />
+
+</p>
+<p>
+Now we will test the above by creating multiple users and attempting to log into client-1's VM with their credentials. First we will jump back to DC-1 and open up "Powershell ISE" as an administrator (in Windows search box, type Powershell ISE -> right click and run as admin).
+</p>
+<br />
+<p>
+<img width="828" height="679" alt="19" src="https://github.com/user-attachments/assets/f10ac3c0-ce4e-4afc-8d3c-4e66db19da32" />
+
+</p>
+<p>
+Now we will test the above by creating multiple users and attempting to log into client-1's VM with their credentials. First we will jump back to DC-1 and open up "Powershell ISE" as an administrator (in Windows search box, type Powershell ISE -> right click and run as admin).
+</p>
+<br />
+<p>
+<img width="828" height="679" alt="19" src="https://github.com/user-attachments/assets/f10ac3c0-ce4e-4afc-8d3c-4e66db19da32" />
+
+</p>
+<p>
+Now we will test the above by creating multiple users and attempting to log into client-1's VM with their credentials. First we will jump back to DC-1 and open up "Powershell ISE" as an administrator (in Windows search box, type Powershell ISE -> right click and run as admin).
+</p>
+<br />
+
