@@ -27,7 +27,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 </p>
 <p>
-In this procedure, we will be covering how to configure Active Directory on Azure between two virtual machines. One being the Domain Controller (VM named DC-1) and another being the client (named client-1). Active Directory, hosted on a domain controller virtual machine, enables an organization to centrally manage, authenticate, and authorize users and computers, while controlling access to resources based on assigned roles and responsibilities. To get started, we will first create a virtual machine running Windows Server 2022, which will serve as our Domain Controller. Nex,t we will create the client's virtual machine using Windows 10. Before creating the virtual machines, however, we will need to create a virtual network for both machines to communicate with eachother effectively. In Azure, search "Virtual Networks" -> Create -> We will name this virtual network as "Active-Directory-Vnet" (Regions throughout this procedure will stay the same).
+In this procedure, we will be covering how to configure Active Directory on Azure between two virtual machines. One being the Domain Controller (VM named DC-1) and another being the client (named client-1). Active Directory, hosted on a domain controller virtual machine, enables an organization to centrally manage, authenticate, and authorize users and computers, while controlling access to resources based on assigned roles and responsibilities. To get started, we will first create a virtual machine running Windows Server 2022, which will serve as our Domain Controller. Next, we will create the client's virtual machine using Windows 10. Before creating the virtual machines, however, we will need to create a virtual network for both machines to communicate with eachother effectively. In Azure, search "Virtual Networks" -> Create -> We will name this virtual network as "Active-Directory-Vnet" (Regions throughout this procedure will stay the same).
 </p>
 <br />
 
@@ -167,18 +167,7 @@ To verify if Client-1's computer has been connected to our domain controller, we
 <img width="747" height="528" alt="18" src="https://github.com/user-attachments/assets/987886a7-92c9-404d-992e-e645f493363b" />
 </p>
 <p>
-Now we will enable remote desktop access for users wanting to access our domain remotely. To do this, we will first create an organizational unit named "_CLIENTS". Follow the steps previously mentioned to create the organizational unity. Then we will move our "client-1" computer from the Computers folder to "_CLIENTS"
-</p>
-<br />
-
-</p>
-<br />
-<p>
-<img width="747" height="528" alt="18" src="https://github.com/user-attachments/assets/987886a7-92c9-404d-992e-e645f493363b" />
-
-</p>
-<p>
-Next, we will log out of client-1 and log back in as our admin account created in DC-1. Then right click the start button -> System -> click Remote Desktop -> click on "Select users that can remotely access this PC" under User Accounts -> click "Add..." -> From here we will type "Domain Users" or "Domain Admins". This will provide the security group selected access to the client's computer remotely. We now allowed all Domain Users to access client-1 remotely.
+Now we will enable remote desktop access for users wanting to access our domain remotely. To do this, we will first create an organizational unit named "_CLIENTS". Follow the steps previously mentioned to create the organizational unity. Then we will move our "client-1" computer from the Computers folder to "_CLIENTS". Next, we will log out of client-1 and log back in as our admin account created in DC-1. Then right click the start button -> System -> click Remote Desktop -> click on "Select users that can remotely access this PC" under User Accounts -> click "Add..." -> From here we will type "Domain Users" or "Domain Admins". This will provide the security group selected access to the client's computer remotely. We now allowed all Domain Users to access client-1 remotely.
 </p>
 <br />
 
